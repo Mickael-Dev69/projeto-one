@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: black;
+    list-style: none;
+  }
+  
+  header{
+      height: 70px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+     
+  }
+  
+  nav{
+    width: 60%;
+   
+  }
+   ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   }
+  
+   li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+   }
+  
+   li:hover{
+  color: rgb(19, 199, 19);
+   }
+  
+   #logo{
+    width: 150px;
+    height: 70px;
+   }
+
+   .fotos-container{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+   }
+
+   .content{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+   }
+
+   .card{
+    width: 400px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+    
+   }
+
+   .banner-1{
+    background-image: url(https://wallpaper.forfun.com/fetch/69/698137e15e3251945316b025818352d8.jpeg);
+   }
+
+   .banner-2{
+    background-image:url(https://wallpaper.forfun.com/fetch/bb/bb8179be23c0f3f6cb03251fe94c381b.jpeg);
+    background-position: 50% 10%;
+   }
+
+   .banner-3{
+    background-image:url(https://wallpaper.forfun.com/fetch/50/50ad9b6c68606c53e6a343c1d0e77f17.jpeg) ;
+   }
+
+   .banner-4{
+    background-image:url(https://wallpaper.forfun.com/fetch/31/31c3cd5c2c4ee0a00a6e13c5ef35eb0a.jpeg) ;
+   }
+
+   .banner-5{
+    background-image: url(https://wallpaper.forfun.com/fetch/5b/5bc26e2210b338bae6179e977d683098.jpeg);
+   }
+
+   .banner-6{
+    background-image:url(https://wallpaper.forfun.com/fetch/3e/3ecc013b72fae801907c91738fac27a4.jpeg) ;
+   }
+   
+    .card:hover{
+        transform: scale(1.3);
+    }
+
+    footer{
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+       }
+      
+       span{
+        color: #fff;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        
+       }
+      
+       #footer-navegation{
+        display: none;
+       }
+      
+       .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+       }
+
+       @media(max-width: 768px){
+        #footer-navegation{
+            display: block;
+           }
+
+           nav{
+            display: none;
+           }
+
+           .content{
+            display: flex;
+            flex-direction: column;
+           }
+       }
+        
